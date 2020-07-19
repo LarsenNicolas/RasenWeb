@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './rasenlogo.jpg';
 import './App.css';
-import {Nav, Navbar, NavDropdown} from "react-bootstrap";
-import {Route, Router} from "react-router";
+import {Nav, Navbar} from "react-bootstrap";
+import {Route} from "react-router";
 import Home from "./views/Home";
 import ProductList from "./views/ProductList";
 import Contact from "./views/Contact";
@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <header className="App-header">
           <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" fixed="top">
-              {/*Reemplazar con datos de firebase*/}
               <Navbar.Brand href="/home">
                   <img
                   src={logo}
@@ -38,7 +37,6 @@ function App() {
             <Route path="/contact" component={Contact} exact/>
             <Route path="/productsList" component={ProductList} exact/>
         </div>
-
       <div class="body">
       </div>
     </div>
